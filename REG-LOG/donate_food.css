@@ -1,0 +1,126 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container
+{
+    padding-top: 10px;
+}
+body{
+    background-image: url('./background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .nav a:hover {
+    background-color: #3366CC;
+
+  }
+  
+  .nav a.nav-des {
+    background-color: #3366CC;
+
+  }
+  .search-bar
+  {
+    margin-top: 20px;
+    padding-left: 600px;
+  }
+  #searchInput
+  {
+     text-align: center;
+     justify-content: center;
+     padding-left: 50px;
+     font-size: 20px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .table{
+    margin:10px;
+    padding:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    top:50px;
+}
+th,td{
+    padding: 20px;
+    font-size: 25px;
+}
+.btn-don
+{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+.organization-details{
+    width:480px;
+    height:200px;
+    background-color: aquamarine;
+    position: relative;
+    left:500px;
+    top:10px;
+    /* padding:3px 0px 0px 5px;
+    margin:10px; */
+}
+.organization-heading{
+    padding-top:20px;
+    margin-top:20px;
+    text-align: center;
+    font-weight: 100px;
+    font-family: 'poppins',sans-serif;
+}
+.logo{
+    position: relative;
+    margin-left:20px ;
+    top:60px;
+    left:10px;
+}
+.strength{
+    position: absolute;
+    left:200px;
+    top:50px;
+    margin-top:40px;
+}
+.address{
+    position: absolute;
+    left:200px;
+    top:130px;
+}
+.donate-btn{
+    width:100px;
+    height:50px;
+    border-radius:20%;
+    position: absolute;
+    left:280px;
+    top:80px;
+    background-color: green;
+    margin-left:60px;
+
+}
+.donate-btn:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}

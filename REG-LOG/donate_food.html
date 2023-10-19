@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="donate_food.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a class="nav-des" href="index.html">Home</a>
+            <a href="#">Change</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" oninput="search()">
+            <ul id="searchResults"></ul>
+        </div>
+        <div class="organization-details">
+            <h1 class="organization-heading">SRKR Trusts</h1>
+            <div class="details">
+              <div class="logo">
+                  <img src="" alt="photo">
+              </div>
+              <div class="org-details">
+                  <p class="strength">strength:<span>300</span></p>
+                  <p class="address">address:</span></p>
+              </div>
+                  <button class="donate-btn">Donate Now</button>
+            </div>
+          </div>
+          <div class="organization-details">
+            <h1 class="organization-heading">SRKR Trusts</h1>
+            <div class="details">
+              <div class="logo">
+                  <img src="" alt="photo">
+              </div>
+              <div class="org-details">
+                  <p class="strength">strength:<span>300</span></p>
+                  <p class="address">address:</span></p>
+              </div>
+                  <button class="donate-btn">Donate Now</button>
+            </div>
+          </div>
+          <div class="organization-details">
+            <h1 class="organization-heading">SRKR Trusts</h1>
+            <div class="details">
+              <div class="logo">
+                  <img src="" alt="photo">
+              </div>
+              <div class="org-details">
+                  <p class="strength">strength:<span>300</span></p>
+                  <p class="address">address:</span></p>
+              </div>
+                  <button class="donate-btn">Donate Now</button>
+            </div>
+          </div>
+          <div class="organization-details">
+            <h1 class="organization-heading">SRKR Trusts</h1>
+            <div class="details">
+              <div class="logo">
+                  <img src="" alt="photo">
+              </div>
+              <div class="org-details">
+                  <p class="strength">strength:<span>300</span></p>
+                  <p class="address">address:</span></p>
+              </div>
+                  <button class="donate-btn">Donate Now</button>
+            </div>
+          </div>
+          <div class="organization-details">
+            <h1 class="organization-heading">SRKR Trusts</h1>
+            <div class="details">
+              <div class="logo">
+                  <img src="" alt="photo">
+              </div>
+              <div class="org-details">
+                  <p class="strength">strength:<span>300</span></p>
+                  <p class="address">address:</span></p>
+              </div>
+                  <button class="donate-btn">Donate Now</button>
+            </div>
+          </div>
+    </div>
+    <script>
+        function search() {
+            var input = document.getElementById('searchInput').value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'donate_food.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    document.getElementById('searchResults').innerHTML = xhr.responseText;
+                } else {
+                console.error('Request failed with status ' + xhr.status);
+            }
+            }
+            xhr.send(JSON.stringify({ input: input }));
+        }
+    </script>
+</body>
+</html>
